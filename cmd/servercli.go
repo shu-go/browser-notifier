@@ -21,7 +21,7 @@ import (
 func main() {
 	app := cli.NewApp()
 	app.Name = "Browser Notifier"
-	app.Usage = "browser-notifier --port 7878"
+	app.Usage = "A notifier using Web Notifications."
 	app.Version = "0.1.0"
 	app.Flags = []cli.Flag{
 		cli.StringFlag{Name: "port, p", Value: "7878", Usage: "server `PORT`"},
@@ -104,5 +104,4 @@ func main() {
 	}
 
 	app.Run(os.Args)
-
 }
