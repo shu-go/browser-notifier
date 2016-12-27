@@ -47,7 +47,7 @@ func NewClientWithID(id string, ws *websocket.Conn) *Client {
 }
 
 func (c *Client) String() string {
-	return fmt.Sprintf("[%d] %s", c.id, c.ws.RemoteAddr())
+	return fmt.Sprintf("[%s] %s", c.id, c.ws.RemoteAddr())
 }
 
 // discard err!! If neeeded, use SendSync() instead.
