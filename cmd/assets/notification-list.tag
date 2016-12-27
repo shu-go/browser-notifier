@@ -146,7 +146,7 @@
         };
         ws.onmessage = function(e) {
             var n = JSON.parse(e.data)
-            nopts = {body: n.text}
+            nopts = {body: n.text, icon: "/favicon.png"}
             var bn = new Notification(n.title + (n.app != "" ? " (" + n.app + ")" : ""), nopts)
             bn.onclick = function(e){ this.close(); window.focus(); }
 
