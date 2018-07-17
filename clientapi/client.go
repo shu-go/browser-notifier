@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"bitbucket.org/shu/browser-notifier"
+	"bitbucket.org/shu_go/browser-notifier"
 )
 
 type Client struct {
