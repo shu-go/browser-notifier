@@ -25,7 +25,7 @@ type globalCmd struct {
 
 func main() {
 	global := globalCmd{}
-	app := gli.New(&global)
+	app := gli.NewWith(&global)
 	app.Name = "Browser Notifier"
 	app.Usage = "A notifier using Web Notifications."
 	app.Version = "0.1.0"
